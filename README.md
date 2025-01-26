@@ -17,12 +17,36 @@ The Subscriptions Page:
 
 ## The SQL Schema
 
+Creating Channel Service Table
 ``` PHP
 CREATE TABLE `channel_services` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `description` text DEFAULT NULL,
   `price` decimal(10,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
+```
 
+Creating Subscriptions Table
+``` PHP
+CREATE TABLE `subscriptions` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text DEFAULT NULL,
+  `price` decimal(10,2) NOT NULL
+);
+```
+
+Create a User Table
+``` PHP
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `role` enum('admin','user') DEFAULT 'user',
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `subscription_id` int(11) DEFAULT NULL
+);
 ```

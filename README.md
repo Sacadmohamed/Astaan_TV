@@ -1,4 +1,4 @@
-# Astaan_TV
+# Astaan_TV_Subscription_System
 ## Project Summary
 This project builds TV subscription system for Astaan TV. It offers the pane for the user registration, the subscription registration and channel services, and also a dashboard to diplay the summary of the services.
 

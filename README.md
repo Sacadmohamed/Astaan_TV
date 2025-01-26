@@ -15,3 +15,14 @@ The Subscriptions Page:
 ![image](https://github.com/user-attachments/assets/5ba3abda-15c7-4903-ae9d-2e429eac657e)
 
 
+## The SQL Schema
+
+``` PHP
+CREATE TABLE `channel_services` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text DEFAULT NULL,
+  `price` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+```

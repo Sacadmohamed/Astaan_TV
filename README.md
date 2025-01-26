@@ -11,3 +11,7 @@ The index page:
 The Dashboard Page:
 ![image](https://github.com/user-attachments/assets/cf77b39f-e467-4fb7-a3fe-64945d37c187)
 
+The Subscriptions Page:
+![image](https://github.com/user-attachments/assets/5ba3abda-15c7-4903-ae9d-2e429eac657e)
+
+
